@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.445),rgba(196, 194, 166, 0.486)),url(https://wallpapercave.com/wp/wp3906251.jpg);
+    height: 100vh;
+}
+
+#board{
+    position: absolute;
+    top: 10vh;
+    left: 55vw;
+    height: 80vh;
+    width: 40vw;
+    background-image: url(https://images.unsplash.com/photo-1561016444-14f747499547?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
+    display: grid;
+    grid-template-columns: repeat(25,1fr);
+    grid-template-rows: repeat(25,1fr);
+    border: 2px dashed yellow;
+}
+
+
+.head{
+    background-color: red;
+    border-radius: 4px;
+    border: 2px solid black;
+    margin: 0.5px;
+    transform: scale(1.1);
+}
+
+.snake{
+    background-color: rgb(40, 196, 157);
+    border-radius: 4px;
+    border: 2px solid black;
+    margin: 0.5px;
+    transform: scale(0.9);
+}
+
+.food{
+    background-color: blue;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+#score{
+    position: absolute;
+    top: 19vh;
+    left: 40vw;
+    color: white;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 2px solid purple;
+    background-color: rgb(194, 122, 194);
+    padding: 10px;
+}
+
+#high{
+    position: absolute;
+    top: 10vh;
+    left: 40vw;
+    color: white;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 2px solid purple;
+    background-color: rgb(194, 122, 194);
+    padding: 10px; 
+}
+
+
+.btn{
+    border-radius: 5px;
+    height: 8vh;
+    width: 10vw;
+    position: absolute;
+    top: 75vh;
+    left: 40vw;
+    background-color:rgb(194, 122, 194) ;
+    font-size: 2rem;
+    color: white;
+    border: 2px solid purple;
+}
+
+#time{
+    background-color:rgb(194, 122, 194) ;
+    height: 6vh;
+    width: 10vw;
+    font-size: 2rem;
+    color: white;
+    border: 2px solid purple;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+}
+#speed{
+    background-color:rgb(194, 122, 194) ;
+    height: 6vh;
+    width: 10vw;
+    font-size: 2rem;
+    color: white;
+    border: 2px solid purple;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+}
+#info{
+    
+    width: 35vw;
+    font-size: 1.5rem;
+    color: white;
+    padding: 3px;
+    float: left;
+    margin-left: 20px;
+    
+}
+
+
+@media (max-width: 1000px){
+    #board{
+        position: absolute;
+        height: 60vh;
+        width: 80vw;
+        top: 20vh;
+        left: 10vw;
+        grid-template-columns: repeat(18,1fr);
+        grid-template-rows: repeat(18,1fr);
+    }
+    .btn{
+        top: 85vh;
+        font-size: 3vh;
+        height: 6vh;
+        width: 20vw;
+    }
+    #high{
+        position: absolute;
+        top: 2vh;
+        left: 23vw;
+        padding: 5px;
+    }
+    #score{
+        position: absolute;
+        top: 10vh;
+        left: 33vw;
+        padding: 5px;
+    }
+}
